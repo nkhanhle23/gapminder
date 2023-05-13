@@ -3,6 +3,10 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 
+# Configuration options for the Streamlit server
+st.set_option('server.address', '0.0.0.0')
+
+
 st.title('Gapminder')
 st.write('Unlocking Lifetimes: Visualizing Progress in Longevity and Poverty Eradication')
 
