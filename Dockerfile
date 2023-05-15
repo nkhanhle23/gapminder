@@ -17,7 +17,7 @@ COPY app/ /app
 EXPOSE 80
 
 # Tells Docker how to test a Streamlit container to check that it is still working. 
-HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
+HEALTHCHECK CMD curl --fail http://localhost:80/_stcore/health
 
 # Run app.py when the container launches
 ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=80"]
