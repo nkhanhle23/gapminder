@@ -14,7 +14,7 @@ RUN pip install -r requirements.txt
 COPY app/ /app
 
 # Make port 8501 available to the world outside this container
-EXPOSE 8501
+EXPOSE 80
 
 # Tells Docker how to test a Streamlit container to check that it is still working. 
 HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
